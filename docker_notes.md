@@ -98,4 +98,4 @@ A container is the running instance of an image ( App code + dependencies)
 8- docker rmi id                       ===> used to remove one or more Docker images.
 9- docker rm                           ===> used to remove one or more Docker container from the sytem.
 10- docker logs                        ===> To check the logs
-
+11-
