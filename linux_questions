@@ -1,0 +1,22 @@
+Linux 300+ Technical Interview Questions    
+
+  1. When you login you get “$” prompt, what is the prompt for root? 
+                         # 
+  2. Explain the difference between grep and egrep? 
+                   Search online
+  3. What is the port # for DNS, NTP and NFS? 
+                  53,123 and 111/2049 
+4. What is the configuration file name of DNS and where is it located? 
+                  /etc/named.conf 
+5. How many new directories will be created after running the following command 
+                  mkdir {a..c}{1..3}  9
+6. Your PC is configured with a DNS server address but not the default gateway. Can the PC access internet? 
+                      No 
+7. What is the difference between IP and Gateway? 
+                   Search online 
+8. Can you assign one static IP to 2 computers, if not then why? 
+                   No because it will create IP conflict 
+9. How to change IPs address to static? 
+                   ifconfig x.x.x.x 
+10. You are trying to ping a server by hostname and you get an error message, “ping: unknown host …”.  What could be the reason and how to solve the problem so you can ping it by hostname?
+                   Check for /etc/hosts or DNS to see if it has hostname to IP entry
