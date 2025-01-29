@@ -124,133 +124,110 @@ Linux 300+ Technical Interview Questions
              Solaris, HP-UX etc. 
 61- List all byte sizes from smallest to largest? 
              Search online 
-How to check the total number of partition in Linux? 
-fdisk -l 
-How to access a linux system from a linux system? 
-ssh 
-Explain the procedure of bonding 2 NICs or interfaces together? 
-Search online 
-What is the exact command syntax to list the 5th column of a file and cut the first 3 letters? 
-cat filename | awk ‘{print $5}’ | cut –c1-3 
-66. 
-What is /etc/hosts file used for? 
-To resolve hostnames with IP address 
-67. 
-. 
-List any 3 options of ‘df’ command and what they are used for? 
-Search online 
-What is the command to change file/directory permissions? 
-chmod 
-What is the purpose of pipe (|)? 
-To combine multiple commands 
-What is /etc directory used for? 
-For configuration files 
-Which command is used to list files in a directory? 
-ls –l 
-There is a command which gives you information about other commands, please explain that command and 
-what is it used for? 
-man 
-How to delete a file and a directory? 
-rm filename and rmdir dirname 
-What is the difference between “tail” and “tail -10”? 
-None 
-List 4 commands to display or read a file contents? 
-cat, more, less, vi 
-Which command is used to read the top 5 lines of a file? 
-head -5 filename 
-What are the different commands or methods to write to a file? 
-echo > filename and vi filename 
-What is swap space and how to check swap space? 
-Search online 
-What is inode and how to find an inode of a file? 
-Search online 
-Which file to edit for kernel tuning? 
-Search online 
-What is the latest version of Redhat? 
-Search online 
-Name the command to find specific word from a file? 
-grep word filename 
-83. 
-You have scheduled a job using crontab but it does not run at the time you specified, what could be the 
-reason and how would you troubleshoot? 
-Check your system time 
-Check your crontab entry 
-Check /var/log/messages 
-84. 
- 
-How to check system hardware information? 
-dmidecode 
-How to check network interface MAC address? 
-ifconfig 
-If I don’t want others to read my file1, how to do that? 
-Remove r from the last 3 bits of file permission 
-What is the purpose of “uniq” and “sed” command? 
-Search online 
-Which command is used to list the contents of a directory in the most recent time and in reverse order, 
-meaning the most updated file should be listed on the bottom? 
-ls –ltr 
-What is the difference between tar, gzip and gunzip? 
-Search online 
-What are the different ways to install and OS? 
-DVD, DVD iso and network boot 
-How to view difference between two files? 
-diff file1 and file2 
-You noticed that one of the Linux servers has no disk space left, how would you troubleshoot that issue? 
-If running LVM then add more disk and extend LVM 
-If not running LVM then add more disk, create a new partition and link the new partition to an 
-existing filesystem 
-How to check Redhat version release? 
-uname –a or /etc/redhat-release 
-What is the difference between TCP and UDP? 
-Search online 
-What is a zombie process? 
-Search online 
-How do you search for a pattern/word in a file and then replace it in an entire file?  
-sed command 
-Explain the purpose of “touch” command? 
-To create an empty file 
-If a command hangs, how to stop it and get the prompt back? 
-98. 
-Ctrl C 
- 
-99. Which command is used to count words or lines? 
-wc 
- 
-100. How to check the number of users logged in? 
-who 
- 
-101. What is the command to view the calendar of 2011? 
-cal 2011 
- 
-102. Which command is used to view disk space? 
-df –h 
- 
-103. How to create a new group in Linux? 
-groupadd 
- 
-104. What is the command to send a message to everyone who is logged into the system? 
-wall 
- 
-105. Which command is used to check total number of disks? 
-fdisk –l 
- 
-106. What is an mail server record in DNS? 
- MX 
- 
-107. What does the following command line do?           
- ps -ef | awk '{print $1}' | sort | uniq 
- List the first column  of all running processes, sort them and  remove duplicates 
- 
-108. You get a call that when a user goes to www.yourwebsite.com it fails and gets an error, how do you 
-troubleshoot? 
- Check for user internet 
- Check to see if user computer has DNS for hostname lookup 
- Check to see if the server is up that is running that website 
- Check to see if the server’s web service is running  
- Check for DNS availability which is resolving that website 
- 
-109. List 4 different directories in /? 
- /etc, /bin, /tmp, /home 
+62- How to check the total number of partition in Linux? 
+            fdisk -l 
+63- How to access a linux system from a linux system? 
+            ssh 
+64- Explain the procedure of bonding 2 NICs or interfaces together? 
+            Search online 
+65- What is the exact command syntax to list the 5th column of a file and cut the first 3 letters? 
+            cat filename | awk ‘{print $5}’ | cut –c1-3 
+66- What is /etc/hosts file used for? 
+            To resolve hostnames with IP address 
+67- List any 3 options of ‘df’ command and what they are used for? 
+            Search online 
+68- What is the command to change file/directory permissions? 
+            chmod 
+69- What is the purpose of pipe (|)? 
+            To combine multiple commands 
+70- What is /etc directory used for? 
+            For configuration files 
+71- Which command is used to list files in a directory? 
+            ls –l 
+72- There is a command which gives you information about other commands, please explain that command and what is it used for? 
+              man 
+73- How to delete a file and a directory? 
+            rm filename and rmdir dirname 
+74- What is the difference between “tail” and “tail -10”? 
+            None 
+75- List 4 commands to display or read a file contents? 
+            cat, more, less, vi 
+76- Which command is used to read the top 5 lines of a file? 
+            head -5 filename 
+77- What are the different commands or methods to write to a file? 
+            echo > filename and vi filename 
+78- What is swap space and how to check swap space? 
+            Search online 
+79- What is inode and how to find an inode of a file? 
+            Search online 
+80- Which file to edit for kernel tuning? 
+            Search online 
+81- What is the latest version of Redhat? 
+            Search online 
+82- Name the command to find specific word from a file? 
+            grep word filename 
+83- You have scheduled a job using crontab but it does not run at the time you specified, what could be the reason and how would you troubleshoot? 
+            Check your system time 
+            Check your crontab entry 
+            Check /var/log/messages 
+84- How to check system hardware information? 
+            dmidecode 
+85- How to check network interface MAC address? 
+            ifconfig 
+86- If I don’t want others to read my file1, how to do that? 
+            Remove r from the last 3 bits of file permission 
+87- What is the purpose of “uniq” and “sed” command? 
+            Search online 
+88- Which command is used to list the contents of a directory in the most recent time and in reverse order, meaning the most updated file should be listed on the bottom? 
+            ls –ltr 
+89- What is the difference between tar, gzip and gunzip? 
+             Search online 
+90- What are the different ways to install and OS? 
+             DVD, DVD iso and network boot 
+91- How to view difference between two files? 
+             diff file1 and file2 
+92- You noticed that one of the Linux servers has no disk space left, how would you troubleshoot that issue? 
+             If running LVM then add more disk and extend LVM 
+             If not running LVM then add more disk, create a new partition and link the new partition to an existing file system 
+93- How to check Redhat version release? 
+             uname –a or /etc/redhat-release 
+94- What is the difference between TCP and UDP? 
+             Search online 
+95- What is a zombie process? 
+             Search online 
+96- How do you search for a pattern/word in a file and then replace it in an entire file?  
+             sed command 
+97- Explain the purpose of “touch” command? 
+             To create an empty file 
+98- If a command hangs, how to stop it and get the prompt back? 
+            Ctrl C 
+99- Which command is used to count words or lines? 
+             wc 
+100- How to check the number of users logged in? 
+             who 
+101- What is the command to view the calendar of 2011? 
+             cal 2011 
+102-  Which command is used to view disk space? 
+             df –h 
+103-  How to create a new group in Linux? 
+             groupadd 
+104-  What is the command to send a message to everyone who is logged into the system? 
+             wall 
+105-  Which command is used to check total number of disks? 
+            fdisk –l 
+106-  What is an mail server record in DNS? 
+             MX 
+107-  What does the following command line do?           
+              ps -ef | awk '{print $1}' | sort | uniq 
+              List the first column  of all running processes, sort them and  remove duplicates 
+108-  You get a call that when a user goes to www.yourwebsite.com it fails and gets an error, how do you troubleshoot? 
+               Check for user internet 
+               Check to see if user computer has DNS for hostname lookup 
+               Check to see if the server is up that is running that website 
+               Check to see if the server’s web service is running  
+               Check for DNS availability which is resolving that website 
+109-  List 4 different directories in /? 
+               /etc, /bin, /tmp, /home 
  
 110. What is the output of the following command:    $tail -10 filename | head -1 
  It will show the first line from the last 10 lines of a file 
