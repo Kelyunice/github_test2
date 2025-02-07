@@ -1,0 +1,17 @@
+   I 1- Create a *deployment* with the nginx image *image:1.14.2* showing all the containers running and a ready status.
+     2- Create a * service* exposing the deployment as a * NodePort* and see that the webserver is working.
+     3- Update the deployment to run *nginx:1.11-alpine* and reverify you can view the webserver via a nodeport.
+
+
+   II LIVENESSPROBE AND READINESSPROBE
+  
+     1- Deploy a new nginx websever.And a *livenessProbe* and *ReadinessProbe* on port 80
+         Test that both probes and the websever work
+   III
+
+     1- Create a new secret called called *class26* using the key entree and the value *devops*
+     2- Create a new deployment called *webapp* running the *nginx image*
+     3- Add the *class26* secret to pod mounted as volume under the /school/ directory.
+     4- Execute a bash shell inside a *webapp* pod and verify the secret has been properly mounted.
+     5- update the deployment to use the nginx:1.12.1-alpine and verify the new image is in use.
+     6- Rollback the deployment and verify the typical, cuurent table version of nginx is in use again.  
