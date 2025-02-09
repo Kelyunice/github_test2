@@ -32,3 +32,5 @@
     3- webhook (LDAAP)
   FOR AUTHORIZATION
     1 - RBAC
+        create role
+        create rolebinding
