@@ -14,4 +14,9 @@
      3- Add the *class26* secret to pod mounted as volume under the /school/ directory.
      4- Execute a bash shell inside a *webapp* pod and verify the secret has been properly mounted.
      5- update the deployment to use the nginx:1.12.1-alpine and verify the new image is in use.
-     6- Rollback the deployment and verify the typical, cuurent table version of nginx is in use again.  
+     6- Rollback the deployment and verify the typical, cuurent table version of nginx is in use again.
+
+   IV-  AUTHENTICATION AND AUTHORIZATION
+
+     You are cluster admin and during successful interview process, a new devops engineer called john was hired to work on a new project.
+   You need to give kely access ( authentication) withi a namespace in the cluster and permit kely (authorization/RBAC) to work on the cluster. 
