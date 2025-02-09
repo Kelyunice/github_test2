@@ -9,7 +9,7 @@
          Test that both probes and the websever work
    III
 
-     1- Create a new secret called called *class26* using the key entree and the value *devops*
+     1- Create a new secret called *class26* using the key entree and the value *devops*
      2- Create a new deployment called *webapp* running the *nginx image*
      3- Add the *class26* secret to pod mounted as volume under the /school/ directory.
      4- Execute a bash shell inside a *webapp* pod and verify the secret has been properly mounted.
