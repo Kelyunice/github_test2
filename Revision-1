@@ -19,4 +19,16 @@
    IV-  AUTHENTICATION AND AUTHORIZATION
 
      You are cluster admin and during successful interview process, a new devops engineer called john was hired to work on a new project.
-   You need to give kely access ( authentication) withi a namespace in the cluster and permit kely (authorization/RBAC) to work on the cluster. 
+   You need to give kely access ( authentication) withi a namespace in the cluster and permit kely (authorization/RBAC) to work on the cluster.
+
+   FOR AUTHENTICATION
+    1- Tokens
+    2- Certificate
+       - openssl key
+       - create a signing in request
+       - generate the ca.crt and ca.key
+     set the credentials into the cluster
+     set the context (user)
+    3- webhook (LDAAP)
+  FOR AUTHORIZATION
+    1 - RBAC
