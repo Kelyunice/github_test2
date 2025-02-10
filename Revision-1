@@ -26,7 +26,7 @@
     2- Certificate
        - openssl key
        - create a signing in request
-       - generate the ca.crt and ca.key
+       - generate the cluster certificate ca.crt and ca.key
      set the credentials into the cluster
      set the context (user)
     3- webhook (LDAAP)
@@ -34,3 +34,15 @@
     1 - RBAC
         create role
         create rolebinding
+===================================================================================================================================================
+ to know who is working on the cluster
+    kubectl config get-contexts
+    kubectl config view
+    create ns
+    create user and passwd
+    create the key - k8s doc , look for authentication 
+    first ( generate the openssl genrsa -out john.key 2048 )
+                openssl req -new -key john.ca -out john-csr -subj "/CN=john/O=devops"
+    cluster cert --> openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key \
+                     -CAcreateserial -out server.crt -days 10000 \
+                      -extensions v3_ext -extfile csr.conf -sha256
