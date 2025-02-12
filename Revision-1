@@ -43,6 +43,7 @@
     create the key - k8s doc , look for authentication 
     first ( generate the openssl genrsa -out john.key 2048 )
                 openssl req -new -key john.key -out john-csr -subj "/CN=john/O=devops"
-    cluster cert --> openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key \
+    cluster cert --> first check the path where the ca.crt will be stored ( systemctl status kubelet.service ) ( ls /etc/kubernetes/pki)
+                    sudo openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key \
                      -CAcreateserial -out server.crt -days 10000 \
                       -extensions v3_ext -extfile csr.conf -sha256
