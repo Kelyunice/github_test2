@@ -54,6 +54,30 @@
      ===>To test if its done:
                        kubectl get pod kube-system --context=john-context
                        kubectl config get-contexts
+                       kubectl run nginx --image=nginx --context=john-context
+                       kubectl get pod --context=john-context 
+=============================================================================================================================================================
+
+                       TAINT and TOLERATION
+
+- Taints are used when doing updates of the cluster and patching
+- Taints can equally be used when some workloads require resources that some nodes may not have, so you what to restrict those nodes so that those workloads will be deployed on those specific nodes.
+      ===> Prefer noSchedule
+      ===> NoSchedule
+      ===> NoExecute
+ - A taint has 
+      ===> Key value (det by kubernetes admin)
+      ===> Taint effect
+    
+    1 - create a deployment which will deploy 6 nginx containers
+    2 - View on which nodes the pods are running. ==> kubectl get pod -o wide
+    3 - Delete the deployment and apply a taint  ===> kubectl taint node (worker) kely=value:NoExecute
+    4 - Deploy the nginx deployment and observe how to put a schedule 
+         ===> to remove the taint kubectl taint node (worker) kely-  ( for a master node --> kubectl taint nodes ip-172-31-41-116 node-role.kubernetes.io/control-plane:NoSchedule-
+
+    5 - Apply a taint of NoSchedule.
+        To put Toleration --> k8s doc
+                
    
    
             
