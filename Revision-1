@@ -48,3 +48,4 @@
               sudo openssl x509 -req -in john-csr -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out john.crt -days 10
    to set user credential in the cluste 
             ===> kubectl config set-credentials john --client-certificate=/home/ubuntu/john.crt --client-key=/home/ubuntu/john.key
+   To set the context for user ===> kubectl config set-context john-context --cluster=kubernetes --user=john --namespace=devops
