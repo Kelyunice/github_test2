@@ -84,7 +84,7 @@
     We have 2 app that should run with an nginx image and expose via a NodePort
            app1 = Blue
            app2 = Green
-    1 - Use a Configmap to modify the context of the webpage
+    1 - Use a Configmap to modify the context of the webpage (imperative==> kubectl create configmap blue-cm --from-file=//home/ubuntu/project1/index.html )
     2 - Have a customized message in a file called index.html for both applications
     3 - Use the index.html to create a configMap
     4 -  Mount the ConfigMap into the container as a volume.
