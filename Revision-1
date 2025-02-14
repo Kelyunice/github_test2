@@ -87,7 +87,7 @@
     1 - Use a Configmap to modify the context of the webpage (imperative==> kubectl create configmap blue-cm --from-file=//home/ubuntu/project1/index.html )
     2 - Have a customized message in a file called index.html for both applications
     3 - Use the index.html to create a configMap
-    4 -  Mount the ConfigMap into the container as a volume.
+    4 -  Mount the ConfigMap into the container as a volume. ( default mount path for nginx--> /usr/share/nginx/html )
     5 - Use ingress to expose the 2 applicationsusing the domain name from the local DNS.
                 
    
